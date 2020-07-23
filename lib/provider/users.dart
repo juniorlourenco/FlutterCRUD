@@ -44,11 +44,13 @@ class Users with ChangeNotifier {
                 avatarUrl: user.avatarUrl,
               ));
     }
-
-    //adicionar
-
-    // ou alterar
-
     notifyListeners();
+  }
+
+  void remove(User user) {
+    if (user != null && user.id != null) {
+      _items.remove(user.id);
+      notifyListeners();
+    }
   }
 }
