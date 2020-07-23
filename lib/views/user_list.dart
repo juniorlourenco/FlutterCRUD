@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:FirstProject/components/user_tile.dart';
 import 'package:FirstProject/provider/users.dart';
 import 'package:provider/provider.dart';
+import 'package:FirstProject/models/user.dart';
 
 class UserList extends StatelessWidget {
   @override
@@ -14,7 +15,10 @@ class UserList extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
-            onPressed: () {},
+            onPressed: () {
+              users.put(User(
+                  name: 'Teste', email: 'aluno@junior.com.br', avatarUrl: ''));
+            },
           ),
         ],
       ),
