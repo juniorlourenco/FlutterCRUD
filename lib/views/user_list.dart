@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:FirstProject/components/user_tile.dart';
 import 'package:FirstProject/provider/users.dart';
 import 'package:provider/provider.dart';
-import 'package:FirstProject/models/user.dart';
+import 'package:FirstProject/routes/app_routes.dart';
 
 class UserList extends StatelessWidget {
   @override
@@ -16,8 +16,7 @@ class UserList extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              users.put(User(
-                  name: 'Teste', email: 'aluno@junior.com.br', avatarUrl: ''));
+              Navigator.of(context).pushNamed(AppRoutes.USER_FORM);
             },
           ),
         ],
