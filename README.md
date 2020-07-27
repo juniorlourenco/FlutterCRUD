@@ -1,6 +1,6 @@
 # FirstProject
 
-A new Flutter project.
+Flutter Crud using Provider.
 
 ## Getting Started
 
