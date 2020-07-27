@@ -8,10 +8,12 @@ class UserForm extends StatelessWidget {
   final Map<String, String> _formData = {};
 
   void _loadFormData(User user) {
-    _formData['id'] = user.id;
-    _formData['id'] = user.name;
-    _formData['id'] = user.email;
-    _formData['id'] = user.avatarUrl;
+    if (user != null) {
+      _formData['id'] = user.id;
+      _formData['id'] = user.name;
+      _formData['id'] = user.email;
+      _formData['id'] = user.avatarUrl;
+    }
   }
 
   @override
