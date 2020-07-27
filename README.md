@@ -1,6 +1,6 @@
 # FirstProject
 
-Flutter Crud using Provider.
+Flutter Crud using Provider following COD3R classes.
 
 ## Getting Started
 
